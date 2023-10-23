@@ -118,14 +118,18 @@ main {
     justify-content: center;
 }
 
-.movie-info {
+.card-info {
+
+    font-family: roboto;
     width: 620px;
     height: 420px;
-    background-color: rgba(255, 0, 0, 0);
+    background-image: url(../assets/img/card-background-info.png);
     margin-left: 120px;
+    border-radius: 8px;
 }
 
-.movie-title {
+.card-title {
+    text-transform: uppercase;
     font-family: roboto;
     font-size: 28px;
     color: yellow;
@@ -133,6 +137,7 @@ main {
 
 .movie-info-title {
     color: white;
+    text-transform: uppercase;
 }
 
 .movie-img {
