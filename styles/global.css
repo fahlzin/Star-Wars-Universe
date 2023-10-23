@@ -27,6 +27,7 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     filter: brightness(100%);
+    
 }
 
 .menu-logo {
@@ -54,18 +55,25 @@ h3.universe {
     display: flex;
 }
 
-.menu-nav li:first-child {
-    color: #FFF220;
-}
 
-li {
+
+li{
+    list-style-type: none;
     font-size: 20px;
     margin: 0 16px;
     list-style: none;
     font-family: roboto;
     font-weight: 400;
     cursor: pointer;
+    
+}
+ a {
+    list-style: none;
     color: white;
+    text-decoration: none;
+}
+.active-item-menu {
+    color: #FFF220;
 }
 
 li:hover {
@@ -110,14 +118,18 @@ main {
     justify-content: center;
 }
 
-.movie-info {
+.card-info {
+
+    font-family: roboto;
     width: 620px;
     height: 420px;
-    background-color: rgba(255, 0, 0, 0);
+    background-image: url(../assets/img/card-background-info.png);
     margin-left: 120px;
+    border-radius: 8px;
 }
 
-.movie-title {
+.card-title {
+    text-transform: uppercase;
     font-family: roboto;
     font-size: 28px;
     color: yellow;
@@ -125,6 +137,7 @@ main {
 
 .movie-info-title {
     color: white;
+    text-transform: uppercase;
 }
 
 .movie-img {
