@@ -16,6 +16,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding-top: 56px;
+    filter: brightness(100%);
 }
 
 .menu {
@@ -25,6 +26,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    filter: brightness(100%);
 }
 
 .menu-logo {
@@ -104,10 +106,15 @@ main {
     background-color: #0f0c1f;
     margin: 32px 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-p {
-    color: white;
+.movie-info {
+    width: 620px;
+    height: 420px;
+    background-color: rgba(255, 0, 0, 0);
+    margin-left: 120px;
 }
 
 .movie-title {
@@ -123,4 +130,9 @@ p {
 .movie-img {
     width: 276px;
     height: 382px;
+    border-radius: 4px;
+}
+
+p {
+    color: white;
 }
