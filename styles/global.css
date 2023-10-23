@@ -27,6 +27,7 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     filter: brightness(100%);
+    
 }
 
 .menu-logo {
@@ -54,18 +55,25 @@ h3.universe {
     display: flex;
 }
 
-.menu-nav li:first-child {
-    color: #FFF220;
-}
 
-li {
+
+li{
+    list-style-type: none;
     font-size: 20px;
     margin: 0 16px;
     list-style: none;
     font-family: roboto;
     font-weight: 400;
     cursor: pointer;
+    
+}
+ a {
+    list-style: none;
     color: white;
+    text-decoration: none;
+}
+.active-item-menu {
+    color: #FFF220;
 }
 
 li:hover {
