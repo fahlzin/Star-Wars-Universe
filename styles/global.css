@@ -16,7 +16,6 @@ header {
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding-top: 56px;
-    filter: brightness(100%);
 }
 
 .menu {
@@ -26,8 +25,6 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    filter: brightness(100%);
-    
 }
 
 .menu-logo {
@@ -63,7 +60,6 @@ li{
     font-family: roboto;
     font-weight: 400;
     cursor: pointer;
-    
 }
 
  a {
