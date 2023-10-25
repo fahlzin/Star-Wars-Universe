@@ -1,6 +1,6 @@
 #nave-banner {
     width: 100%;
-    background-image: url(../../assets/img/naves-background.png);
+    background-image: url(./../../assets/img/naves-background.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 100% auto;

@@ -2,7 +2,7 @@
 
 .header_personagens {
     width: 100%;
-    background-image: url(/assets/img/background-personagens.png);
+    background-image: url(./../../assets/img/background-personagens.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding-top: 56px;
@@ -10,7 +10,7 @@
 }
 
 .personagens__section {
-    background-image: url(/assets/img/personagens-card-background.png);
+    background-image: url(./../../assets/img/personagens-card-background.png);
     width: 1260px;
     height: 600px;
     border-radius: 25px;
