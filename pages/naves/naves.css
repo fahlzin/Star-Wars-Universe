@@ -1,4 +1,4 @@
-/* Global CSS */
+/* --------------------------------Inicio do CSS Global------------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -31,6 +31,7 @@ header>nav>.menu-nav{
     margin: 4rem auto;
 }
 
+/* A partir daqui começo a usar o atributo matemático clamp que serve para definir três possíveis tamanhos. No geral o valor do meio é o padrão. */
 .menu-logo {
     width: clamp(80px,2vw,150px);
     height: auto;
@@ -102,25 +103,6 @@ a:hover {
     color: white;
 }
 
-/* main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* .content-grid {
-    display: flex;
-    width: 1260px;
-    height: 480px;
-    background-image: url(./../../assets/img/personagens-card-background.png);
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
-    padding: 2rem 0;
-    border-radius: 25px;
-} */
-
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -141,7 +123,7 @@ main {
     background-repeat: no-repeat;
 }
 
-/* ------------------------------------------------------------------------------------ */
+
 .card-info {
     line-height: 1rem;
     font-family: roboto;
@@ -164,12 +146,12 @@ main {
     color: yellow;
 }
 
-.movie-info-title {
+.info-title {
     color: white;
     text-transform: uppercase;
     position: relative;
 }
-.movie-info-title::after {
+.info-title::after {
     content: "";
     width: 1rem;
     height: 0.15rem;
@@ -188,10 +170,10 @@ p {
     color: white;
 }
 
-/* Fim do Global CSS */
+/* --------------------------------Fim do CSS Global------------------------------------ */
 
-/* Naves CSS */
 
+/* --------------------------------Inicio do Naves CSS------------------------------------ */
 #nave-banner {
     /* width: 100%; */
     background-image: url(./../../assets/img/naves-background.png);
@@ -215,3 +197,6 @@ footer>span {
     justify-self: center;
     align-self: center;
 }
+
+
+/* --------------------------------Fim do Naves CSS------------------------------------ */
