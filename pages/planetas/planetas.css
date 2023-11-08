@@ -4,19 +4,24 @@
 .header__planets {
     background-image: url(../../assets/img/planets-background.png);
 }
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+}
+
 .planets__section {
     background-image: url(../../assets/img/planets-card-background.png);
-    width: 1260px;
-    height: 480px;
     border-radius: 25px;
-    margin: 32px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.planets__section__img {
-    height: auto;
-    width: 35%;
+    padding: 20px;
 }
 
+.planets__section__img {
+    max-width: 100%;
+}
 
