@@ -1,110 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    background-color: #070510;
-}
-
-.header_personagens {
+#banner {
     width: 100%;
-    background-image: url(./../../assets/img/background-personagens.png);
+    background-image: url(/assets/img/background-personagens.png);
+    height: 100dvh;
+    background-position: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    padding-top: 56px;
-    filter: brightness(100%);
+     padding-top: 1px;
 }
 
-.personagens__section {
-    background-image: url(./../../assets/img/personagens-card-background.png);
-    width: 1260px;
-    height: 600px;
-    border-radius: 25px;
-    margin: 32px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.personagens__section1__img {
-    height: auto;
-    width: 35%;
+footer {
+    width: 100%;
+    color: white;
+    background-color: #0e0c1b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px;
 }
 
-.card-title1 {
-    color: #DED658;
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.8px;
-    text-transform: uppercase;
+footer>span {
+    justify-self: center;
+    align-self: center;
 }
 
-.personagem-info-title1 {
-    color: #EAEBEB;
-    font-family: Roboto;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.64px;
-    text-transform: uppercase;
-}
-
-.personagens__section2__img {
-    height: auto;
-    width: 35%;
-}
-
-.card-title2 {
-    color: #DED658;
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.8px;
-    text-transform: uppercase;
-}
-
-.personagem-info-title2 {
-    color: #EAEBEB;
-    font-family: Roboto;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.64px;
-    text-transform: uppercase;
-}
-
-.personagens__section3__img {
-    height: auto;
-    width: 35%;
-}
-
-.card-title3 {
-    color: #DED658;
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.8px;
-    text-transform: uppercase;
-}
-
-.personagem-info-title3 {
-    color: #EAEBEB;
-    font-family: Roboto;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.64px;
-    text-transform: uppercase;
-}
