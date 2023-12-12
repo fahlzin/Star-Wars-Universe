@@ -5,11 +5,11 @@
     
     --txt-tittle: (50px, 10vw, 88px);
 
-    --bkg-filmes: url(/assets/img/background-sw.jpg);
-    --bkg-personagens: url(/assets/img/background-personagens.png);
-    --bkg-planetas: url(/assets/img/planets-background.png);
-    --bkg-veiculos: url(/assets/img/vehicles-background.png);
-    --bkg-naves: url(/assets/img/naves-background.png);
+    --bkg-filmes: url(../assets/img/background-sw.jpg);
+    --bkg-personagens: url(../assets/img/background-personagens.png);
+    --bkg-planetas: url(../assets/img/planets-background.png);
+    --bkg-veiculos: url(../assets/img/vehicles-background.png);
+    --bkg-naves: url(../assets/img/naves-background.png);
     --bkg-info: rgba(66, 9, 9, 0.2);
     --bkg-bg: #070510;
 }
