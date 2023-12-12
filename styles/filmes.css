@@ -10,3 +10,15 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+
+#btn-alert {
+  width: 120px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: rgb(91, 91, 255);
+  color: white;
+}
+
+#btn-alert:hover {
+  background-color: rgb(33, 33, 182);
+}
