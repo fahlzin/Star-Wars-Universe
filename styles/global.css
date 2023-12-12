@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     background-image: url(../assets/img/background-sw.jpg);
     background-repeat: no-repeat;
@@ -28,24 +28,23 @@ header {
 }
 
 .menu-logo {
-    width: clamp(80px,2vw,150px);
-    height: auto;
+    width: 108px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-div>.logo-star-wars {
-    width: clamp(80px,18vw,100px);
-    height: auto;
-    aspect-ratio: 2/1;
+.logo-star-wars {
+    width: 92px;
+    height: 56px;
 }
 
 h3.universe {
     font-family: Arial, Helvetica, sans-serif;
     color: #FFF220;
-    font-size: clamp(14px,3vw,16px);
+    font-size: 16px;
     margin: -8px;
 }
 
@@ -55,15 +54,15 @@ h3.universe {
 
 li{
     list-style-type: none;
-    font-size: clamp(0.5rem,2vw,1.3rem);
-    margin: 0 clamp(0.2rem,1vw,1rem);
+    font-size: 20px;
+    margin: 0 16px;
     list-style: none;
     font-family: roboto;
     font-weight: 400;
     cursor: pointer;
 }
 
-a {
+ a {
     list-style: none;
     color: white;
     text-decoration: none;
@@ -79,92 +78,67 @@ a:hover {
 }
 
 .section-title {
-    width: clamp(200px,60vw,600px);
-    height: auto;
-    margin: clamp(2rem,12vw,10rem) 0 0 clamp(0.2rem,10vw,8rem);
+    width: 480px;
+    height: 200px;
+    margin: 128px 0 0 128px;
 }
 
 .title {
-    font-size: clamp(50px,10vw,88px);
+    font-size: 88px;
     font-family: roboto;
     font-weight: bold;
     color: #FFF220;
 }
 
 .description {
-    font-size: clamp(18px,2vw,24px);
+    font-size: 24px;
     font-family: poppins;
     font-weight: 400;
     color: white;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
-    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    /* grid-gap: 2rem; */
+.movie {
+    width: 1260px;
+    height: 480px;
+    border-radius: 8px;
+    background-color: #0f0c1f;
+    margin: 32px 0;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    border-radius: 25px;
-    background-image: url(./../../assets/img/personagens-card-background.png);
-    background-repeat: no-repeat;
-    margin-bottom: 2rem;
-}
-
-.card-img {
-    width: 276px;
-    height: 382px;
-    justify-self: center;
 }
 
 .card-info {
-    line-height: 1rem;
     font-family: roboto;
     width: 620px;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.2);
+    height: 420px;
+    background-image: url(../assets/img/card-background-info.png);
+    margin-left: 120px;
     border-radius: 8px;
-    padding-left: 12px;
-}
-
-.card-info>p,h2,h3 {
-    margin: 1rem 1rem;
 }
 
 .card-title {
     text-transform: uppercase;
     font-family: roboto;
-    font-size: 1.6rem;
-    line-height: 4rem;
+    font-size: 28px;
     color: yellow;
 }
 
-.info-title {
+.movie-info-title {
     color: white;
     text-transform: uppercase;
-    position: relative;
-}
-.info-title::after {
-    content: "";
-    width: 1rem;
-    height: 0.15rem;
-    position: absolute;
-    inset: 1.5rem 0 0 0;
-    background-color: #FFF220;
 }
 
-img {
-    width:max-content;
-    aspect-ratio: 1/1;
-    object-fit: fill;
+.movie-img {
+    width: 276px;
+    height: 382px;
+    border-radius: 4px;
 }
 
 p {

@@ -1,0 +1,238 @@
+/* --------------------------------Base------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap");
+@import "./variables.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: var(--bkg-bg);
+}
+
+/* --------------------------------Header------------------------------------ */
+
+#banner {
+  height: 100vh;
+  height: 100svh;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.menu {
+  display: flex;
+  width: 90%;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+/* A partir daqui começo a usar o atributo matemático clamp
+que serve para definir três possíveis tamanhos. No geral o valor do meio é o padrão. */
+
+.menu-logo {
+  width: clamp(80px, 2vw, 15vw);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+picture {
+  position: relative;
+  margin-left: 10vw;
+}
+
+picture > .logo-star-wars {
+  position: relative;
+  width: clamp(80px, 10vw, 15vw);
+  /* aspect-ratio: 16/9; */
+}
+
+        /* --------------------------Menu------------------------------ */
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleY(1.3);
+  perspective: 2000px;
+  
+  transform-style: preserve-3d;
+}
+
+li {
+  list-style-type: none;
+  font-size: clamp(0.6rem, 2vw, 1.3rem);
+  margin: 0 clamp(0.2rem, 1vw, 1.5rem);
+  list-style: none;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  letter-spacing: .15rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.perspectiva:hover {
+  transform-origin: 50% 100%;
+  transform: rotateX(40deg);
+  color: var(--emphesis-color);
+  transition: 0.3s ease-out;
+}
+
+.nav-link-wars {
+  list-style: none;
+  color: var(--common-color);
+  text-decoration: none;
+}
+
+.active-el {
+  color: var(--emphesis-color);
+}
+
+.nav-link-wars:active {
+  color: var(--emphesis-color);
+}
+
+.nav-link-wars:hover {
+  color: var(--emphesis-color);
+  transition: 0.3s ease-out;
+}
+
+
+        /* --------------------------Menu fim------------------------------ */
+
+.section-title {
+  width: clamp(200px, 60vw, 600px);
+  height: auto;
+  margin: 30vh 0 0 10vw;
+}
+
+.title {
+  font-size: clamp(50px, 10vw, 88px);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--emphesis-color);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.description {
+  font-size: clamp(0.7rem, 2vw, 24px);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--common-color);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+/* --------------------------------Conteúdo------------------------------------ */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+        /* --------------------------Card------------------------------ */
+
+.content-grid {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: clamp(8px, 1rem, 3vh);
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vw;
+  background-image: url(../assets/img/personagens-card-background.png);
+  background-repeat: no-repeat;
+}
+
+.card-img {
+  width: max(350px, 60%);
+  /* aspect-ratio: 1/1; */
+  /* object-fit: contain; */
+  padding: 1rem;
+}
+
+.card-info {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  line-height: 1rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  width: auto;
+  height: 1fr;
+  background-color: var(--bkg-info);
+  margin: 1rem 2rem 1rem 0;
+  padding-left: 0.5rem;
+  border-radius: 0vw 2vw 2vw 0;
+  border-left: 0.1rem solid var(--emphesis-color);
+}
+
+p {
+  font-size: clamp(0.5rem, 0.8rem, 4vw);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--common-color);
+}
+
+.card-info p:last-child {
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  color: var(--emphesis-color);
+}
+
+.info-title {
+  font-size: 1rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--common-color);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.info-title::after {
+  content: "";
+  width: 1.5ch;
+  height: 0.15rem;
+  position: absolute;
+  inset: 1.1rem 0 0 0;
+  background-color: var(--emphesis-color);
+}
+
+/* --------------------------------Footer------------------------------------ */
+
+footer {
+  letter-spacing: .1rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  color: var(--common-color);
+  background-color: #0e0c1b;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px; */
+  padding: 1rem 0;
+}
+
+footer .border-color {
+  border-bottom: 1px solid var(--emphesis-color);
+}
+
+.footer-txt {
+  color: var(--common-color);
+}

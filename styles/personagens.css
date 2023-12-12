@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap');
+@import "./variables.css";
+
+#banner {
+  background-image: var(--bkg-personagens);
+}
+
+/* .personagens__section {
+    background-image: url(./assets/img/personagens-card-background.png);
+    width: 1260px;
+    height: 600px;
+    border-radius: 25px;
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .personagens__section1__img {
+    height: auto;
+    width: 35%;
+} */
+
+/* .card-title1 {
+    color: var(--emphesis-color);
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+} */
+
+/* .personagem-info-title1 {
+    color: var(--common-color);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+} */
+
+/* .personagens__section2__img {
+    height: auto;
+    width: 50%;
+} */
+
+/* .card-title2 {
+    color: var(--emphesis-color);
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+} */
+
+/* .personagem-info-title2 {
+    color: var(--common-color);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+} */
+
+/* .personagens__section3__img {
+    height: auto;
+    width: 35%;
+} */
+
+/* .card-title3 {
+    color: var(--emphesis-color);
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+} */
+
+/* .personagem-info-title3 {
+    color: var(--common-color);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+} */

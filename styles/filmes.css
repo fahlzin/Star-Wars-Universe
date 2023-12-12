@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap");
+@import "./variables.css";
+
+/* --------------------------------Inicio do Naves CSS------------------------------------ */
+
+#banner {
+  background-image: var(--bkg-filmes);
+  height: 100vh;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}

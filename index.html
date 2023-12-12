@@ -4,48 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars Universe | Home</title>
-    <link rel="stylesheet" href="./styles/global.css">
+    <link href="https:/cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./styles/new-global.css" />
+    <link rel="stylesheet" href="./styles/filmes.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+
+    <script src="./js/menu_footer.js" defer></script>
+    <script src="./js/global.js" defer></script>
+
     <link rel="icon" type="image/x-icon" href="./assets/img/sw-favicon.png">
 </head>
 <body>
-    <header>
-        <div class="menu">
-            <div class="menu-logo">
-                <img class="logo-star-wars" src="./assets/img/starwars-logo.png" alt="logo starwars">
-                <h3 class="universe">UNIVERSE</h3>
-            </div>
-            <nav>
-                <ul class="menu-nav">
-                    <li> <a class="active-item-menu" href=""> FILMES</a></li>
-                    <li> <a href="pages/personagens/personagens.html">PERSONAGENS</a></li>
-                    <li> <a href="pages/planetas/planetas.html">PLANETAS</a></li>
-                    <li> <a href="pages/veiculos/veiculos.html">VEÍCULOS</a></li>
-                    <li> <a href="pages/naves/naves.html">NAVES</a></li>
-                </ul>
-            </nav>
+    <header id="banner">
+      <div class="menu">
+        <div class="menu-logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./assets/img/starwars-logo-400.png">
+            <source media="(min-width: 600px)" srcset="./assets/img/starwars-logo-200.png">
+            <img
+              class="logo-star-wars"
+              src="./assets/img/starwars-logo-320.png"
+              alt="logo starwars"
+            />
+          </picture>
         </div>
-        <section class="section-title">
-            <h1 class="title">FILMES</h1>
-            <p class="description">Viaje através das histórias épicas da galáxia. Seja parte da jornada assistindo aos filmes de Star Wars.</p>
-        </section>
+
+<!-- Menu carregado pelo menu_footer.js -->
+        <nav id="menu-bar"></nav>
+<!-- Menu carregado pelo menu_footer.js -->
+
+      </div>
+      <section class="section-title">
+        <h1 class="title">FILMES</h1>
+        <p class="description">
+          Viaje através das histórias épicas da galáxia. Faça a jornada assistindo aos filmes de Star Wars.
+        </p>
+        <button id="btn-alert" onclick="chamarAlerta()">ALERT</button>
+      </section>
+      
     </header>
 
     <main>
-        <section class="card">
-            <img class="card-img" src="./assets/img/episode1.jpg" alt="sw episodio 1">
+        <section class="content-grid">
+            <img class="card-img" src="./assets/img/episode1.webp" alt="sw episodio 1">
             <div class="card-info">
                 <h2 class="card-title">EPISÓDIO I: A AMEAÇA FANTASMA</h2>
                 <h3 class="info-title">DIREÇÃO</h3>
-                <p>George Lucas</p>
+                <p id="director"></p>
                 <h3 class="info-title">PRODUTOR</h3>
-                <p>Gary Kurtz,  Rick McCallum</p>
+                <p id="producer"></p>
                 <h3 class="info-title">LANÇAMENTO</h3>
-                <p>00/00/0000</p>
+                <p id="release"></p>
                 <h3 class="info-title">SINOPSE</h3>
                 <p> Obi-Wan e seu mentor embarcam em uma perigosa aventura na tentativa de salvar o planeta das garras de Darth Sidious. Durante a viagem, eles conhecem um habilidoso menino e decidem treiná-lo para se tornar um Jedi. Mas o tempo irá revelar que as coisas nem sempre são o que aparentam ser.</p>
             </div>
         </section>
-        <section class="card">
+        <section class="content-grid">
             <img class="card-img" src="./assets/img/episode2.jpg" alt="sw episodio 2">
             <div class="card-info">
                 <h2 class="card-title">EPISÓDIO II: ATAQUE DOS CLONES</h2>
@@ -59,7 +74,7 @@
                 <p> Tentado por promessas de poder, Anakin Skywalker se aproxima de Darth Sidious e participa de um plano para acabar com os Cavaleiros Jedi.</p>
             </div>
         </section>
-        <section class="card">
+        <section class="content-grid">
             <img class="card-img" src="./assets/img/episode3.jpg" alt="sw episodio 3">
             <div class="card-info">
                 <h2 class="card-title">EPISÓDIO III: A VINGANÇA DOS SITH</h2>
@@ -75,6 +90,11 @@
         </section>
     </main>
     
-    <footer><span>Desenvolvido por Grupo Poderoso! rs</span><span>Nossos nomes</span></footer>
+<!-- Footer carregado pelo menu_footer.js -->
+    <footer id="rodape"></footer>
+<!-- Footer carregado pelo menu_footer.js -->
+
+    <script src="https:/cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
